@@ -9,6 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-image: url(../images/cover-image-light.png);
   --header-title-color: #ffc2e6;
   --main-card-text-color: #353430;
   --main-text: #353430;
@@ -20,10 +21,14 @@
   --rec-visibility: none;
   --borders-color: #353430;
   --buttons-border: rgba(50, 49, 45, 0.4);
+  --title-shadow-color: #ff8dcb;
+  --link-shadow: #FF8DCB;
+  --bottomline-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
+    --background-image: url(../images/cover-image-light.png);
     --header-title-color: #ffc2e6;
     --main-card-text-color: #353430;
     --main-text: #353430;
@@ -33,5 +38,10 @@
     --buttons-color: #353430;
     --corners-color: #353430;
     --rec-visibility: none;
+    --borders-color: #353430;
+    --buttons-border: rgba(50, 49, 45, 0.4);
+    --title-shadow-color: #ff8dcb;
+    --link-shadow: #FF8DCB;
+    --bottomline-color: #353430;
   }
 }

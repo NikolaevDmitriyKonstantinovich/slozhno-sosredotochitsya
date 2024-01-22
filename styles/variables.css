@@ -6,7 +6,7 @@
 :root {
   --header-padding: 10px;
   --header-before-size: 25px;
-  --background-image: url(../images/cover-image-dark.png);
+  --background-image: url(../images/cover-image.png);
   --red-color: #ff0070;
   --header-title-color: #db00ff;
   --main-card-text-color: #f1b2ce;
@@ -20,4 +20,7 @@
   --borders-color: #f1b2ce;
   --buttons-border: rgba(255, 0, 112, 0.4);
   --font: IBM Plex Mono, monospace;
+  --title-shadow-color: #FF8DCB;
+  --link-shadow: #FF0070;
+  --bottomline-color: #FF0070;
 }
