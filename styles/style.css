@@ -14,7 +14,7 @@
   position: relative;
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   margin-bottom: 40px;
   min-height: 668px;
   max-inline-size: 1440px;
@@ -77,10 +77,10 @@
   flex-direction: column;
   grid-column: 2 / -2;
   grid-row: 1;
-  gap: 13px;
+  gap: 12px;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 72px;
+  margin-top: 74px;
   margin-right: 10px;
 }
 
@@ -271,12 +271,13 @@
 
 .footer__text {
   color: var(--header-title-color);
-  text-shadow: 4px 4px 0px var(--title-shadow-color);
+  text-shadow: 2px 2px 0px var(--title-shadow-color);
   font-family: var(--font);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
+  letter-spacing: -2px;
 }
 
 .main__images-container {
@@ -335,11 +336,19 @@
     grid-row: 4 / 5;
   }
 
+  .header__text-grid {
+    /* margin-top: 162px; */
+    display: grid;
+    justify-content: end;
+    padding-right: 10px;
+    align-self: center;
+    padding-top: 50px;
+  }
+
   .header__block-text {
-    margin-left: 384px;
-    margin-top: 162px;
+    margin-top: 0px; /* 162 */
     width: 364px;
-    margin-bottom: 183px;
+    /* margin-bottom: 183px; */
   }
 
   .question__text {
@@ -377,8 +386,13 @@
     grid-row: 1 / 8;
   }
 
+  .header__menu {
+    align-self: center;
+    padding-top: 20px;
+  }
+
   .header__theme-menu-list {
-    margin-top: 190px;
+    margin-top: 0px;
     margin-right: 20px;
   }
 
@@ -388,7 +402,7 @@
   }
 
   .footer__text {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    letter-spacing: 0px;
   }
 
   .header__icon {
@@ -518,10 +532,11 @@
 
 @media screen and (min-width: 1024px) {
   .header__text-grid {
-    margin-top: 114px;
+    /* margin-top: 114px; */
     display: grid;
     justify-content: end;
     padding-right: 20px;
+    align-self: center;
   }
   .header__block-text {
     /* margin-top: 114px; */
@@ -536,11 +551,15 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  .header__menu {
+    align-self: self-start;
+    padding-top: 0px;
+  }
 
   .header__theme-menu-list {
     flex-direction: row;
     gap: 36px;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-right: 0px;
     gap: 10px;
   }
@@ -565,7 +584,7 @@
 
   .header__title {
     text-shadow: 4px 4px 0px var(--red-color);
-    margin-top: 272px;
+    /* margin-top: 272px; */
   }
   .footer__text {
     text-shadow: 4px 4px 0px var(--red-color);
